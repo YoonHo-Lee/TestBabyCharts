@@ -15,28 +15,11 @@ public class BabyAdapter extends BaseAdapter {
     List<BabyItem> items = new ArrayList<BabyItem>();
 
     String keyword;
-    int totalCount;
 
     public void setKeyword(String keyword) {
         this.keyword = keyword;
     }
-    public String getKeyword() {
-        return keyword;
-    }
 
-    public void setTotalCount(int totalCount) {
-        this.totalCount = totalCount;
-    }
-    public int getTotalCount() {
-        return totalCount;
-    }
-
-    public int getStartIndex() {
-        if (items.size() < totalCount) {
-            return items.size() + 1;
-        }
-        return -1;
-    }
 
     public void add(BabyItem item) {
         items.add(item);

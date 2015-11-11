@@ -21,8 +21,6 @@ public class BabyItemView extends FrameLayout {
 
     ImageView iconView;
     TextView nameView, birthView;
-    BabyItem mItem;
-    ImageLoader imageLoader;
 
     DisplayImageOptions options;
 
